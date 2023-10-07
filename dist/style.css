@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Nunito:wght@500&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/03/Download-Free-Purple-Backgrounds.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bold {
+    font-weight: bolder;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .6);
+  }
+
+  tr {
+    height: 40px;
+  }
+
+  tr>td {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .key,
+  .actions {
+    text-align: start;
+    width: 150px;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 0px 5px;
+    border: solid 0px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+  }
+
+  tr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  tr::after {
+    transition: .3s ease-in-out;
+    content: '.';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    text-align: center;
+    font-size: 3px;
+    background-color: #6904a9;
+    color: #6904a9;
+    border-radius: 100px;
+
+  }
+
+  tr:hover::after {
+    width: 100%;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #6904a9;
+  }
+
+  button:active {
+    color: white;
+    background-color: #200233;
+  }
+
+  #alert {
+    transition: .3s;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #btn {
+    font-weight: 900;
+    width: 150px;
+    height: 40px;
+    border: 2px #6904a9 solid;
+  }
+
+  #numCharacters {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 0;
+    margin: 0px 5px;
+    border: solid 0px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  #logo a {
+    color: rgb(51, 0, 99);
+  }
+
+  #logo a:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>💖</text></svg>") 16 0, auto;
+  }
+
+  .blackColor {
+    color: #000;
+  }
+
+  .whiteColor {
+    color: #fff;
+  }
+
+  .redColor {
+    color: #a00
+  }
+
+  .yellowColor {
+    color: #ff0;
+  }
+
+  .blueColor {
+    color: #33f;
+  }
+
+  .lightGreenColor {
+    color: #33f;
+  }
+
+  .blackColor {
+    color: #000;
+  }
+
+  .whiteColor {
+    color: #fff;
+  }
+
+  .redColor {
+    color: #a00;
+  }
+
+  .yellowColor {
+    color: #ff0;
+  }
+
+  .blueColor {
+    color: #33f;
+  }
+
+  .lightGreenColor {
+    color: #020;
+  }
+
+  .darkGrayColor {
+    color: #333;
+  }
+
+  .lightGrayColor {
+    color: #e16000;
+  }
+
+  .greenColor {
+    color: #006000;
+  }
+
+  .purpleColor {
+    color: #800080;
+  }
+
+  .orangeColor {
+    color: #993300;
+  }
+
+  .pinkColor {
+    color: #662044;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+  }
+
+  #rotate {
+    display: none;
+  }
+}
+#logo {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0;
+    color: rgb(241, 241, 241);
+    background-color: #111;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: none;
+  }
+  #rotate {
+    font-size: 30px;
+    display: block;
+    position: absolute;
+  }
+}
